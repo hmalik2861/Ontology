@@ -649,3 +649,23 @@ RecipeOntology:Walnut rdf:type owl:NamedIndividual ;
 #################################################################
 #    Recipe-Objects
 #################################################################
+
+
+
+RecipeOntology:DryRubBakedChickenWings rdf:type schema:Recipe ;
+										RecipeOntology:hasTitle	"Dry Rub Baked Chicken Wings"^^xsd:string;
+										schema:image	"https://www.lordbyronskitchen.com/wp-content/uploads/2020/05/Dry-Rub-Baked-Chicken-Wings-b-532x800.jpg"^^xsd:string;
+										schema:author [
+                                          			rdf:type RecipeOntology:Person;
+													schema:name "Lord Byron's Kitchen"^^xsd:string];
+									   schema:cookingMethod	RecipeOntology:Baking;
+									   
+                                                         
+
+
+
+
+
+
+
+
