@@ -658,7 +658,7 @@ RecipeOntology:DryRubBakedChickenWings rdf:type schema:Recipe ;
 										schema:author [
                                           			rdf:type RecipeOntology:Person;
 													schema:name "Lord Byron's Kitchen"^^xsd:string];
-									   schema:cookingMethod	RecipeOntology:Baking;
+									   schema:cookingMethod	RecipeOntology:Baking
 									   
                                                          
 
