@@ -4,8 +4,8 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org#> .
-@prefix schema1: <https://schema.org/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <https://schema.org#> .
 @prefix RecipeOntology: <http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#> .
 @base <http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology> .
 
@@ -24,7 +24,7 @@ RecipeOntology:hasCookTime rdf:type owl:ObjectProperty ;
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#hasDifficultyLevel
 RecipeOntology:hasDifficultyLevel rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf owl:topObjectProperty ;
-                                  rdfs:domain schema1:Recipe ;
+                                  rdfs:domain schema:Recipe ;
                                   rdfs:range RecipeOntology:DifficultyLevel .
 
 
@@ -45,21 +45,21 @@ RecipeOntology:hasIngredientType rdf:type owl:ObjectProperty ;
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#hasMainIngredient
 RecipeOntology:hasMainIngredient rdf:type owl:ObjectProperty ;
                                  rdfs:subPropertyOf owl:topObjectProperty ;
-                                 rdfs:domain schema1:Recipe ;
+                                 rdfs:domain schema:Recipe ;
                                  rdfs:range RecipeOntology:MainIngredient .
 
 
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#hasMealType
 RecipeOntology:hasMealType rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf owl:topObjectProperty ;
-                           rdfs:domain schema1:Recipe ;
+                           rdfs:domain schema:Recipe ;
                            rdfs:range RecipeOntology:MealType .
 
 
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#hasNutritionContent
 RecipeOntology:hasNutritionContent rdf:type owl:ObjectProperty ;
                                    rdfs:subPropertyOf owl:topObjectProperty ;
-                                   rdfs:domain schema1:NutritionInformation ;
+                                   rdfs:domain schema:NutritionInformation ;
                                    rdfs:range RecipeOntology:NutritionContent .
 
 
@@ -67,7 +67,7 @@ RecipeOntology:hasNutritionContent rdf:type owl:ObjectProperty ;
 RecipeOntology:hasNutritionalInformation rdf:type owl:ObjectProperty ;
                                          rdfs:subPropertyOf owl:topObjectProperty ;
                                          rdfs:domain RecipeOntology:FoodProduct ;
-                                         rdfs:range schema1:NutritionInformation .
+                                         rdfs:range schema:NutritionInformation .
 
 
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#hasPrepTime
@@ -79,21 +79,21 @@ RecipeOntology:hasPrepTime rdf:type owl:ObjectProperty ;
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#hasRecipeCuisine
 RecipeOntology:hasRecipeCuisine rdf:type owl:ObjectProperty ;
                                 rdfs:subPropertyOf owl:topObjectProperty ;
-                                rdfs:domain schema1:Recipe ;
+                                rdfs:domain schema:Recipe ;
                                 rdfs:range RecipeOntology:RecipeCuisine .
 
 
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#hasRecipeType
 RecipeOntology:hasRecipeType rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf owl:topObjectProperty ;
-                             rdfs:domain schema1:Recipe ;
+                             rdfs:domain schema:Recipe ;
                              rdfs:range RecipeOntology:RecipeType .
 
 
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#hasSideIngredient
 RecipeOntology:hasSideIngredient rdf:type owl:ObjectProperty ;
                                  rdfs:subPropertyOf owl:topObjectProperty ;
-                                 rdfs:domain schema1:Recipe ;
+                                 rdfs:domain schema:Recipe ;
                                  rdfs:range RecipeOntology:SideIngredient .
 
 
@@ -108,7 +108,7 @@ RecipeOntology:hasSubstitute rdf:type owl:ObjectProperty ;
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#hasTotalTime
 RecipeOntology:hasTotalTime rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf owl:topObjectProperty ;
-                            rdfs:domain schema1:Recipe ;
+                            rdfs:domain schema:Recipe ;
                             rdfs:range RecipeOntology:TotalTime .
 
 
@@ -157,72 +157,72 @@ RecipeOntology:ofNutritionType rdf:type owl:ObjectProperty ;
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#produceQuantityOfFood
 RecipeOntology:produceQuantityOfFood rdf:type owl:ObjectProperty ;
                                      rdfs:subPropertyOf owl:topObjectProperty ;
-                                     rdfs:domain schema1:Recipe ;
+                                     rdfs:domain schema:Recipe ;
                                      rdfs:range RecipeOntology:QuantityOfFood .
 
 
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#usedInRecipe
 RecipeOntology:usedInRecipe rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf owl:topObjectProperty ;
-                            owl:inverseOf schema1:recipeIngredient ;
+                            owl:inverseOf schema:recipeIngredient ;
                             rdfs:domain RecipeOntology:Ingredient ;
-                            rdfs:range schema1:Recipe .
+                            rdfs:range schema:Recipe .
 
 
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#wasDerivedFrom
 RecipeOntology:wasDerivedFrom rdf:type owl:ObjectProperty ;
                               rdfs:subPropertyOf owl:topObjectProperty ;
-                              rdfs:domain schema1:Recipe ;
+                              rdfs:domain schema:Recipe ;
                               rdfs:range RecipeOntology:Source .
 
 
 ###  https://schema.org/aggregateRating
-schema1:aggregateRating rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf owl:topObjectProperty ;
-                        rdfs:domain schema1:Recipe ;
-                        rdfs:range schema1:AggregateRating .
+schema:aggregateRating rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain schema:Recipe ;
+                       rdfs:range schema:AggregateRating .
 
 
 ###  https://schema.org/author
-schema1:author rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf owl:topObjectProperty ;
-               rdfs:domain schema1:Recipe ;
-               rdfs:range RecipeOntology:Person .
+schema:author rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain schema:Recipe ;
+              rdfs:range RecipeOntology:Person .
 
 
 ###  https://schema.org/cookingMethod
-schema1:cookingMethod rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf owl:topObjectProperty ;
-                      rdfs:domain schema1:Recipe ;
-                      rdfs:range RecipeOntology:CookingMethod .
+schema:cookingMethod rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:domain schema:Recipe ;
+                     rdfs:range RecipeOntology:CookingMethod .
 
 
 ###  https://schema.org/hasRecipeInstructions
-schema1:hasRecipeInstructions rdf:type owl:ObjectProperty ;
-                              rdfs:subPropertyOf owl:topObjectProperty ;
-                              rdfs:domain schema1:Recipe ;
-                              rdfs:range RecipeOntology:Instruction .
+schema:hasRecipeInstructions rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty ;
+                             rdfs:domain schema:Recipe ;
+                             rdfs:range RecipeOntology:Instruction .
 
 
 ###  https://schema.org/recipeIngredient
-schema1:recipeIngredient rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf owl:topObjectProperty ;
-                         rdfs:domain schema1:Recipe ;
-                         rdfs:range RecipeOntology:Ingredient .
+schema:recipeIngredient rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty ;
+                        rdfs:domain schema:Recipe ;
+                        rdfs:range RecipeOntology:Ingredient .
 
 
 ###  https://schema.org/recipeYield
-schema1:recipeYield rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf owl:topObjectProperty ;
-                    rdfs:domain schema1:Recipe ;
-                    rdfs:range RecipeOntology:FoodProduct .
+schema:recipeYield rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain schema:Recipe ;
+                   rdfs:range RecipeOntology:FoodProduct .
 
 
 ###  https://schema.org/tool
-schema1:tool rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
-             rdfs:domain schema1:Recipe ;
-             rdfs:range RecipeOntology:CookingEquipment .
+schema:tool rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain schema:Recipe ;
+            rdfs:range RecipeOntology:CookingEquipment .
 
 
 #################################################################
@@ -267,7 +267,7 @@ RecipeOntology:hasIngredientName rdf:type owl:DatatypeProperty ;
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#hasTitle
 RecipeOntology:hasTitle rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf owl:topDataProperty ;
-                        rdfs:domain schema1:Recipe ;
+                        rdfs:domain schema:Recipe ;
                         rdfs:range xsd:string .
 
 
@@ -300,45 +300,45 @@ RecipeOntology:prepTime rdf:type owl:DatatypeProperty ;
 
 
 ###  https://schema.org/image
-schema1:image rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf owl:topDataProperty ;
-              rdfs:domain schema1:Recipe ;
-              rdfs:range xsd:string .
-
-
-###  https://schema.org/name
-schema1:name rdf:type owl:DatatypeProperty ;
+schema:image rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
-             rdfs:domain RecipeOntology:Person ;
+             rdfs:domain schema:Recipe ;
              rdfs:range xsd:string .
 
 
+###  https://schema.org/name
+schema:name rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain RecipeOntology:Person ;
+            rdfs:range xsd:string .
+
+
 ###  https://schema.org/ratingCount
-schema1:ratingCount rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf owl:topDataProperty ;
-                    rdfs:domain schema1:AggregateRating ;
-                    rdfs:range xsd:integer .
+schema:ratingCount rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain schema:AggregateRating ;
+                   rdfs:range xsd:integer .
 
 
 ###  https://schema.org/recipeInstructions
-schema1:recipeInstructions rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf owl:topDataProperty ;
-                           rdfs:domain RecipeOntology:Instruction ;
-                           rdfs:range xsd:string .
+schema:recipeInstructions rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf owl:topDataProperty ;
+                          rdfs:domain RecipeOntology:Instruction ;
+                          rdfs:range xsd:string .
 
 
 ###  https://schema.org/reviewCount
-schema1:reviewCount rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf owl:topDataProperty ;
-                    rdfs:domain schema1:AggregateRating ;
-                    rdfs:range xsd:integer .
+schema:reviewCount rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain schema:AggregateRating ;
+                   rdfs:range xsd:integer .
 
 
 ###  https://schema.org/url
-schema1:url rdf:type owl:DatatypeProperty ;
-            rdfs:subPropertyOf owl:topDataProperty ;
-            rdfs:domain RecipeOntology:Source ;
-            rdfs:range xsd:anyURI .
+schema:url rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain RecipeOntology:Source ;
+           rdfs:range xsd:anyURI .
 
 
 #################################################################
@@ -347,7 +347,7 @@ schema1:url rdf:type owl:DatatypeProperty ;
 
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#CookTime
 RecipeOntology:CookTime rdf:type owl:Class ;
-                        rdfs:subClassOf schema1:Time ;
+                        rdfs:subClassOf schema:Time ;
                         rdfs:comment "Cooktime contains the cook time as well as the chill time." .
 
 
@@ -410,7 +410,7 @@ RecipeOntology:Person rdf:type owl:Class .
 
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#PrepTime
 RecipeOntology:PrepTime rdf:type owl:Class ;
-                        rdfs:subClassOf schema1:Time ;
+                        rdfs:subClassOf schema:Time ;
                         rdfs:comment "Preptime specifies the time taking preparing for the ingredients before cooking. Also known as, Pre-cooking time." .
 
 
@@ -449,24 +449,24 @@ RecipeOntology:Source rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#TotalTime
 RecipeOntology:TotalTime rdf:type owl:Class ;
-                         rdfs:subClassOf schema1:Time ;
+                         rdfs:subClassOf schema:Time ;
                          rdfs:comment "Total time of the recipe is a combination of the prep time and the cooking time." .
 
 
 ###  https://schema.org/AggregateRating
-schema1:AggregateRating rdf:type owl:Class .
+schema:AggregateRating rdf:type owl:Class .
 
 
 ###  https://schema.org/NutritionInformation
-schema1:NutritionInformation rdf:type owl:Class .
+schema:NutritionInformation rdf:type owl:Class .
 
 
 ###  https://schema.org/Recipe
-schema1:Recipe rdf:type owl:Class .
+schema:Recipe rdf:type owl:Class .
 
 
 ###  https://schema.org/Time
-schema1:Time rdf:type owl:Class .
+schema:Time rdf:type owl:Class .
 
 
 #################################################################
@@ -691,6 +691,7 @@ RecipeOntology:DryRubBakedChickenWings rdf:type schema:Recipe ;
                                                              RecipeOntology:hasPrepTime [
                                                              rdf:type RecipeOntology:PrepTime;
                                                              RecipeOntology:prepTime "10 Minutes"^^xsd:string]];
+										
 										
                                                              
                                                              
