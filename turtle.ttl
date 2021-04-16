@@ -658,7 +658,15 @@ RecipeOntology:DryRubBakedChickenWings rdf:type schema:Recipe ;
 										schema:author [
                                           			rdf:type RecipeOntology:Person;
 													schema:name "Lord Byron's Kitchen"^^xsd:string];
-									   schema:cookingMethod	RecipeOntology:Baking
+									   schema:cookingMethod	RecipeOntology:Baking;
+										RecipeOntology:wasDerivedFrom [
+                                          				rdf:type RecipeOntology:Source;
+                                                             schema:url	"https://www.lordbyronskitchen.com/wprm_print/19181"^^sxd:anyURI];
+										schema:aggregateRating [
+                                          rdf:type schema:AggregateRating;
+                                                   schema:reviewCount 20;
+                                                   schema:ratingCount 3.6];
+										
 									   
                                                          
 
