@@ -661,11 +661,18 @@ RecipeOntology:DryRubBakedChickenWings rdf:type schema:Recipe ;
 									   schema:cookingMethod	RecipeOntology:Baking;
 										RecipeOntology:wasDerivedFrom [
                                           				rdf:type RecipeOntology:Source;
-                                                             schema:url	"https://www.lordbyronskitchen.com/wprm_print/19181"^^sxd:anyURI];
+                                                             schema:url	"https://www.lordbyronskitchen.com/wprm_print/19181"^^xsd:anyURI];
 										schema:aggregateRating [
                                           rdf:type schema:AggregateRating;
                                                    schema:reviewCount 20;
                                                    schema:ratingCount 3.6];
+										RecipeOntology:hasDifficultyLevel [
+                                        			rdf:type RecipeOntology:DifficultyLevel;
+                                        			RecipeOntology:difficultyLevel "easy"^^xsd:string];
+										RecipeOntology:hasMealType RecipeOntology:Snack;
+										RecipeOntology:RecipeCuisine RecipeOntology:North_American;
+										RecipeOntology:RecipeType RecipeOntology:Appetizer;
+
 										
 									   
                                                          
