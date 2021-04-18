@@ -6,6 +6,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
 @prefix RecipeOntology: <http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#> .
+@prefix ex:   <http://example.org/> .
 @base <http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology> .
 
 <http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology> rdf:type owl:Ontology .
