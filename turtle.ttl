@@ -1,4 +1,5 @@
 @prefix : <http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology> .
+@prefix ex: <http://example.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -6,7 +7,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
 @prefix RecipeOntology: <http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#> .
-@prefix ex:   <http://example.org/> .
 @base <http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology> .
 
 <http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology> rdf:type owl:Ontology .
@@ -473,6 +473,11 @@ schema:Time rdf:type owl:Class .
 #    Individuals
 #################################################################
 
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Accompaniments
+RecipeOntology:Accompaniments rdf:type owl:NamedIndividual ,
+                                       RecipeOntology:IngredientType .
+
+
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#African
 RecipeOntology:African rdf:type owl:NamedIndividual ,
                                 RecipeOntology:RecipeCuisine .
@@ -486,6 +491,11 @@ RecipeOntology:Appetizer rdf:type owl:NamedIndividual ,
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Asian
 RecipeOntology:Asian rdf:type owl:NamedIndividual ,
                               RecipeOntology:RecipeCuisine .
+
+
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Baked_Goods
+RecipeOntology:Baked_Goods rdf:type owl:NamedIndividual ,
+                                    RecipeOntology:IngredientType .
 
 
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Baking
@@ -533,6 +543,11 @@ RecipeOntology:Cholesterol rdf:type owl:NamedIndividual ,
                                     RecipeOntology:NutritionType .
 
 
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Dairy
+RecipeOntology:Dairy rdf:type owl:NamedIndividual ,
+                              RecipeOntology:IngredientType .
+
+
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Deep-Frying
 RecipeOntology:Deep-Frying rdf:type owl:NamedIndividual ,
                                     RecipeOntology:CookingMethod .
@@ -563,14 +578,34 @@ RecipeOntology:Fat rdf:type owl:NamedIndividual ,
                             RecipeOntology:NutritionType .
 
 
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Fats_and_Oils
+RecipeOntology:Fats_and_Oils rdf:type owl:NamedIndividual ,
+                                      RecipeOntology:IngredientType .
+
+
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Fiber
 RecipeOntology:Fiber rdf:type owl:NamedIndividual ,
                               RecipeOntology:NutritionType .
 
 
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Fish
+RecipeOntology:Fish rdf:type owl:NamedIndividual ,
+                             RecipeOntology:IngredientType .
+
+
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Flavorings
+RecipeOntology:Flavorings rdf:type owl:NamedIndividual ,
+                                   RecipeOntology:IngredientType .
+
+
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#French
 RecipeOntology:French rdf:type owl:NamedIndividual ,
                                RecipeOntology:RecipeCuisine .
+
+
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Fruits
+RecipeOntology:Fruits rdf:type owl:NamedIndividual ,
+                               RecipeOntology:IngredientType .
 
 
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Frying
@@ -581,6 +616,16 @@ RecipeOntology:Frying rdf:type owl:NamedIndividual ,
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#German
 RecipeOntology:German rdf:type owl:NamedIndividual ,
                                RecipeOntology:RecipeCuisine .
+
+
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Grain_Products
+RecipeOntology:Grain_Products rdf:type owl:NamedIndividual ,
+                                       RecipeOntology:IngredientType .
+
+
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Grains
+RecipeOntology:Grains rdf:type owl:NamedIndividual ,
+                               RecipeOntology:IngredientType .
 
 
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Greek
@@ -608,6 +653,16 @@ RecipeOntology:Italian rdf:type owl:NamedIndividual ,
                                 RecipeOntology:RecipeCuisine .
 
 
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Legumes_and_Nuts
+RecipeOntology:Legumes_and_Nuts rdf:type owl:NamedIndividual ,
+                                         RecipeOntology:IngredientType .
+
+
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Liquids
+RecipeOntology:Liquids rdf:type owl:NamedIndividual ,
+                                RecipeOntology:IngredientType .
+
+
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Lunch
 RecipeOntology:Lunch rdf:type owl:NamedIndividual ,
                               RecipeOntology:MealType .
@@ -616,6 +671,11 @@ RecipeOntology:Lunch rdf:type owl:NamedIndividual ,
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Main_Course
 RecipeOntology:Main_Course rdf:type owl:NamedIndividual ,
                                     RecipeOntology:RecipeType .
+
+
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Meat
+RecipeOntology:Meat rdf:type owl:NamedIndividual ,
+                             RecipeOntology:IngredientType .
 
 
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Mexican
@@ -641,11 +701,6 @@ RecipeOntology:Potassium rdf:type owl:NamedIndividual ,
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Protein
 RecipeOntology:Protein rdf:type owl:NamedIndividual ,
                                 RecipeOntology:NutritionType .
-
-
-###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#PumpkinSeed
-RecipeOntology:PumpkinSeed rdf:type owl:NamedIndividual ;
-                           RecipeOntology:hasSubstitute RecipeOntology:Walnut .
 
 
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Roasting
@@ -708,6 +763,11 @@ RecipeOntology:Thai rdf:type owl:NamedIndividual ,
                              RecipeOntology:RecipeCuisine .
 
 
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Vegetables
+RecipeOntology:Vegetables rdf:type owl:NamedIndividual ,
+                                   RecipeOntology:IngredientType .
+
+
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Vitamin_A
 RecipeOntology:Vitamin_A rdf:type owl:NamedIndividual ,
                                   RecipeOntology:NutritionType .
@@ -718,13 +778,7 @@ RecipeOntology:Vitamin_C rdf:type owl:NamedIndividual ,
                                   RecipeOntology:NutritionType .
 
 
-###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Walnut
-RecipeOntology:Walnut rdf:type owl:NamedIndividual ;
-                      RecipeOntology:hasSubstitute RecipeOntology:PumpkinSeed .
-
-
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
-
 
 
 #################################################################
@@ -762,7 +816,37 @@ RecipeOntology:DryRubBakedChickenWings rdf:type schema:Recipe ;
                                                              RecipeOntology:hasPrepTime [
                                                              rdf:type RecipeOntology:PrepTime;
                                                              RecipeOntology:prepTime "10 Minutes"^^xsd:string]];
-										schema:recipeYield ex:FoodProduct.
+										schema:recipeYield ex:FoodProduct;
+										RecipeOntology:produceQuantityOfFood	[
+                                          							rdf:type RecipeOntology:QuantityOfFood;
+                                                                    RecipeOntology:ofFoodProduct	ex:FoodProduct;
+                                                                    RecipeOntology:ofFoodQuantity	[
+                                                                  						rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 4;
+                                                                                        RecipeOntology:hasUnit "serving"^^xsd:string]];
+										schema:hasRecipeInstructions	ex:Instructions.
+
+#ex:Instructions	rdf:type RecipeOntology:Instruction;
+#				schema:hasRecipeInstructions "Preheat oven to 450 degrees.  Line a large baking sheet with parchment paper.  Place a wire cooling rack onto the baking sheet. Set aside."^^xsd:string,
+#											 "Wash wings in cold water and pat thoroughly dry with paper towels."^^xsd:string,
+#                                             "Place the wings into a bowl and toss well with the vegetable oil until well coated."^^xsd:string,
+#											"Whisk together the brown sugar, chipotle powder, chili powder, oregano, dry mustard, seasoning salt, salt, and ground black pepper."^^xsd:string,
+#											"Pour the dry rub over the chicken wings and massage until very well coated. Marinate in the fridge for 30 minutes."^^xsd:string,
+#											"Generously coat the wire rack with the non-stick cooking spray. Then, place each wing onto the rack in a single layer. Do not over lap."^^xsd:string,
+#											"Bake for 50 minutes. Remove from oven and plate. Garnish and serve immediately."^^xsd:string.
+
+ex:Instructions	rdf:type RecipeOntology:Instruction;
+				schema:hasRecipeInstructions [
+                					rdf:type rdf:Seq;
+                					rdf:li	"Preheat oven to 450 degrees.  Line a large baking sheet with parchment paper.  Place a wire cooling rack onto the baking sheet. Set aside."^^xsd:string;
+									rdf:li	"Wash wings in cold water and pat thoroughly dry with paper towels."^^xsd:string;
+                                    rdf:li	"Place the wings into a bowl and toss well with the vegetable oil until well coated."^^xsd:string;
+									rdf:li	"Whisk together the brown sugar, chipotle powder, chili powder, oregano, dry mustard, seasoning salt, salt, and ground black pepper."^^xsd:string;
+									rdf:li	"Pour the dry rub over the chicken wings and massage until very well coated. Marinate in the fridge for 30 minutes."^^xsd:string;
+									rdf:li	"Generously coat the wire rack with the non-stick cooking spray. Then, place each wing onto the rack in a single layer. Do not over lap."^^xsd:string;
+									rdf:li	"Bake for 50 minutes. Remove from oven and plate. Garnish and serve immediately."^^xsd:string].
+                                                                             
+
 
 ex:FoodProduct rdf:type RecipeOntology:FoodProduct;
 				RecipeOntology:hasNutritionalInformation [
