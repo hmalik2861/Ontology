@@ -762,12 +762,123 @@ RecipeOntology:DryRubBakedChickenWings rdf:type schema:Recipe ;
                                                              RecipeOntology:hasPrepTime [
                                                              rdf:type RecipeOntology:PrepTime;
                                                              RecipeOntology:prepTime "10 Minutes"^^xsd:string]];
-										schema:recipeYield [
-                                          			rdf:type RecipeOntology:FoodProduct;
-                                                             RecipeOntology:hasNutritionalInformation [
-                                                               		rdf:type schema:NutritionInformation;
-                                                                             RecipeOntology:hasNutritionContent [
-                                                                               		rdf:type RecipeOntology:NutritionContent
+										schema:recipeYield ex:FoodProduct.
+
+ex:FoodProduct rdf:type RecipeOntology:FoodProduct;
+				RecipeOntology:hasNutritionalInformation [
+                  						rdf:type schema:NutritionInformation;
+                            			RecipeOntology:hasNutritionContent [
+                                          						rdf:type RecipeOntology:NutritionContent;
+                                                                RecipeOntology:ofNutritionType	RecipeOntology:Calories;
+                                                                RecipeOntology:ofNutritionQuantity [
+                                                                  						rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 479;
+                                                                                        RecipeOntology:hasUnit "kcal"^^xsd:string]],
+                										
+                  															[
+                                          						rdf:type RecipeOntology:NutritionContent;
+                                                                RecipeOntology:ofNutritionType	RecipeOntology:Carbohydrates;
+                                                                RecipeOntology:ofNutritionQuantity [
+                                                                  						rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 3;
+                                                                                        RecipeOntology:hasUnit "grams"^^xsd:string]],
+                										
+                  															[
+                                          						rdf:type RecipeOntology:NutritionContent;
+                                                                RecipeOntology:ofNutritionType	RecipeOntology:Protein;
+                                                                RecipeOntology:ofNutritionQuantity [
+                                                                  						rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 35;
+                                                                                        RecipeOntology:hasUnit "grams"^^xsd:string]],
+                										
+                  															[
+                                          						rdf:type RecipeOntology:NutritionContent;
+                                                                RecipeOntology:ofNutritionType	RecipeOntology:Fat;
+                                                                RecipeOntology:ofNutritionQuantity [
+                                                                  						rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 36;
+                                                                                        RecipeOntology:hasUnit "grams"^^xsd:string]],
+                										
+                  															[
+                                          						rdf:type RecipeOntology:NutritionContent;
+                                                                RecipeOntology:ofNutritionType	RecipeOntology:Saturated_Fat;
+                                                                RecipeOntology:ofNutritionQuantity [
+                                                                  						rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 12;
+                                                                                        RecipeOntology:hasUnit "grams"^^xsd:string]],
+                										
+                  															[
+                                          						rdf:type RecipeOntology:NutritionContent;
+                                                                RecipeOntology:ofNutritionType	RecipeOntology:Cholesterol;
+                                                                RecipeOntology:ofNutritionQuantity [
+                                                                  						rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 148;
+                                                                                        RecipeOntology:hasUnit "milligrams"^^xsd:string]],
+                										
+                  															[
+                                          						rdf:type RecipeOntology:NutritionContent;
+                                                                RecipeOntology:ofNutritionType	RecipeOntology:Sodium;
+                                                                RecipeOntology:ofNutritionQuantity [
+                                                                  						rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 540;
+                                                                                        RecipeOntology:hasUnit "milligrams"^^xsd:string]],
+                										
+                  															[
+                                          						rdf:type RecipeOntology:NutritionContent;
+                                                                RecipeOntology:ofNutritionType	RecipeOntology:Potassium;
+                                                                RecipeOntology:ofNutritionQuantity [
+                                                                  						rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 313;
+                                                                                        RecipeOntology:hasUnit "milligrams"^^xsd:string]],
+                										
+                  															[
+                                          						rdf:type RecipeOntology:NutritionContent;
+                                                                RecipeOntology:ofNutritionType	RecipeOntology:Fiber;
+                                                                RecipeOntology:ofNutritionQuantity [
+                                                                  						rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 1;
+                                                                                        RecipeOntology:hasUnit "grams"^^xsd:string]],
+                										
+                  															[
+                                          						rdf:type RecipeOntology:NutritionContent;
+                                                                RecipeOntology:ofNutritionType	RecipeOntology:Sugar;
+                                                                RecipeOntology:ofNutritionQuantity [
+                                                                  						rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 2;
+                                                                                        RecipeOntology:hasUnit "grams"^^xsd:string]],
+                										
+                  															[
+                                          						rdf:type RecipeOntology:NutritionContent;
+                                                                RecipeOntology:ofNutritionType	RecipeOntology:Vitamin_A;
+                                                                RecipeOntology:ofNutritionQuantity [
+                                                                  						rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 480;
+                                                                                        RecipeOntology:hasUnit "IU"^^xsd:string]],
+                										
+                  															[
+                                          						rdf:type RecipeOntology:NutritionContent;
+                                                                RecipeOntology:ofNutritionType	RecipeOntology:Vitamin_C;
+                                                                RecipeOntology:ofNutritionQuantity [
+                                                                  						rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 1.3;
+                                                                                        RecipeOntology:hasUnit "milligrams"^^xsd:string]],
+                										
+                  															[
+                                          						rdf:type RecipeOntology:NutritionContent;
+                                                                RecipeOntology:ofNutritionType	RecipeOntology:Calcium;
+                                                                RecipeOntology:ofNutritionQuantity [
+                                                                  						rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 28;
+                                                                                        RecipeOntology:hasUnit "grams"^^xsd:string]],
+                										
+                  															[
+                                          						rdf:type RecipeOntology:NutritionContent;
+                                                                RecipeOntology:ofNutritionType	RecipeOntology:Iron;
+                                                                RecipeOntology:ofNutritionQuantity [
+                                                                  						rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 2.1;
+                                                                                        RecipeOntology:hasUnit "milligrams"^^xsd:string]]].
+                                                 				
 
 										
 										
