@@ -5,7 +5,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
-@prefix schema1: <https://schema.org#> .
 @prefix RecipeOntology: <http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#> .
 @base <http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology> .
 
@@ -508,9 +507,29 @@ RecipeOntology:Brunch rdf:type owl:NamedIndividual ,
                                RecipeOntology:MealType .
 
 
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Calcium
+RecipeOntology:Calcium rdf:type owl:NamedIndividual ,
+                                RecipeOntology:NutritionType .
+
+
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Calories
+RecipeOntology:Calories rdf:type owl:NamedIndividual ,
+                                 RecipeOntology:NutritionType .
+
+
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Carbohydrates
+RecipeOntology:Carbohydrates rdf:type owl:NamedIndividual ,
+                                      RecipeOntology:NutritionType .
+
+
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Chinese
 RecipeOntology:Chinese rdf:type owl:NamedIndividual ,
                                 RecipeOntology:RecipeCuisine .
+
+
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Cholesterol
+RecipeOntology:Cholesterol rdf:type owl:NamedIndividual ,
+                                    RecipeOntology:NutritionType .
 
 
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Deep-Frying
@@ -536,6 +555,16 @@ RecipeOntology:Drinks rdf:type owl:NamedIndividual ,
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Easy
 RecipeOntology:Easy rdf:type owl:NamedIndividual ,
                              RecipeOntology:DifficultyLevel .
+
+
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Fat
+RecipeOntology:Fat rdf:type owl:NamedIndividual ,
+                            RecipeOntology:NutritionType .
+
+
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Fiber
+RecipeOntology:Fiber rdf:type owl:NamedIndividual ,
+                              RecipeOntology:NutritionType .
 
 
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#French
@@ -568,6 +597,11 @@ RecipeOntology:Indian rdf:type owl:NamedIndividual ,
                                RecipeOntology:RecipeCuisine .
 
 
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Iron
+RecipeOntology:Iron rdf:type owl:NamedIndividual ,
+                             RecipeOntology:NutritionType .
+
+
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Italian
 RecipeOntology:Italian rdf:type owl:NamedIndividual ,
                                 RecipeOntology:RecipeCuisine .
@@ -598,6 +632,16 @@ RecipeOntology:Poaching rdf:type owl:NamedIndividual ,
                                  RecipeOntology:CookingMethod .
 
 
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Potassium
+RecipeOntology:Potassium rdf:type owl:NamedIndividual ,
+                                  RecipeOntology:NutritionType .
+
+
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Protein
+RecipeOntology:Protein rdf:type owl:NamedIndividual ,
+                                RecipeOntology:NutritionType .
+
+
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#PumpkinSeed
 RecipeOntology:PumpkinSeed rdf:type owl:NamedIndividual ;
                            RecipeOntology:hasSubstitute RecipeOntology:Walnut .
@@ -611,6 +655,11 @@ RecipeOntology:Roasting rdf:type owl:NamedIndividual ,
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Salads
 RecipeOntology:Salads rdf:type owl:NamedIndividual ,
                                RecipeOntology:RecipeType .
+
+
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Saturated_Fat
+RecipeOntology:Saturated_Fat rdf:type owl:NamedIndividual ,
+                                      RecipeOntology:NutritionType .
 
 
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Side_dish
@@ -628,6 +677,11 @@ RecipeOntology:Snack rdf:type owl:NamedIndividual ,
                               RecipeOntology:MealType .
 
 
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Sodium
+RecipeOntology:Sodium rdf:type owl:NamedIndividual ,
+                               RecipeOntology:NutritionType .
+
+
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Soup
 RecipeOntology:Soup rdf:type owl:NamedIndividual ,
                              RecipeOntology:RecipeType .
@@ -643,9 +697,24 @@ RecipeOntology:Steaming rdf:type owl:NamedIndividual ,
                                  RecipeOntology:CookingMethod .
 
 
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Sugar
+RecipeOntology:Sugar rdf:type owl:NamedIndividual ,
+                              RecipeOntology:NutritionType .
+
+
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Thai
 RecipeOntology:Thai rdf:type owl:NamedIndividual ,
                              RecipeOntology:RecipeCuisine .
+
+
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Vitamin_A
+RecipeOntology:Vitamin_A rdf:type owl:NamedIndividual ,
+                                  RecipeOntology:NutritionType .
+
+
+###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Vitamin_C
+RecipeOntology:Vitamin_C rdf:type owl:NamedIndividual ,
+                                  RecipeOntology:NutritionType .
 
 
 ###  http://www.semanticweb.org/hammad/ontologies/2021/2RecipeOntology#Walnut
@@ -654,6 +723,7 @@ RecipeOntology:Walnut rdf:type owl:NamedIndividual ;
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+
 
 
 #################################################################
@@ -665,7 +735,7 @@ RecipeOntology:Walnut rdf:type owl:NamedIndividual ;
 RecipeOntology:DryRubBakedChickenWings rdf:type schema:Recipe ;
 										RecipeOntology:hasTitle	"Dry Rub Baked Chicken Wings"^^xsd:string;
 										schema:image	"https://www.lordbyronskitchen.com/wp-content/uploads/2020/05/Dry-Rub-Baked-Chicken-Wings-b-532x800.jpg"^^xsd:string;
-										schema:author [
+										schema:author RecipeOntology:person1, [
                                           			rdf:type RecipeOntology:Person;
 													schema:name "Lord Byron's Kitchen"^^xsd:string];
 									   schema:cookingMethod	RecipeOntology:Baking;
@@ -691,6 +761,13 @@ RecipeOntology:DryRubBakedChickenWings rdf:type schema:Recipe ;
                                                              RecipeOntology:hasPrepTime [
                                                              rdf:type RecipeOntology:PrepTime;
                                                              RecipeOntology:prepTime "10 Minutes"^^xsd:string]];
+										schema:recipeYield [
+                                          			rdf:type RecipeOntology:FoodProduct;
+                                                             RecipeOntology:hasNutritionalInformation [
+                                                               		rdf:type schema:NutritionInformation;
+                                                                             RecipeOntology:hasNutritionContent [
+                                                                               		rdf:type RecipeOntology:NutritionContent
+
 										
 										
                                                              
