@@ -822,29 +822,110 @@ RecipeOntology:DryRubBakedChickenWings rdf:type schema:Recipe ;
                                                                     RecipeOntology:ofFoodProduct	ex:FoodProduct;
                                                                     RecipeOntology:ofFoodQuantity	[
                                                                   						rdf:type RecipeOntology:Quantity;
-                                                                                        RecipeOntology:hasValue 4;
+                                                                                        RecipeOntology:hasValue 6;
                                                                                         RecipeOntology:hasUnit "serving"^^xsd:string]];
-										schema:hasRecipeInstructions	ex:Instructions.
+										schema:hasRecipeInstructions	ex:Instructions;
+										schema:recipeIngredient	[	
+                                          					rdf:type RecipeOntology:Ingredient;
+                                                            RecipeOntology:usedInRecipe	RecipeOntology:DryRubBakedChickenWings;
+                                                            RecipeOntology:hasIngredientType RecipeOntology:Flavorings;
+                                                            RecipeOntology:hasIngredientName "brown sugar"^^xsd:String;
+                                                            RecipeOntology:hasIngredientQuantity [
+                                                              							rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 1;
+                                                                                        RecipeOntology:hasUnit "tablespoon"^^xsd:string]], 
+															[	
+                                          					rdf:type RecipeOntology:Ingredient;
+                                                            RecipeOntology:usedInRecipe	RecipeOntology:DryRubBakedChickenWings;
+                                                            RecipeOntology:hasIngredientType RecipeOntology:Flavorings;
+                                                            RecipeOntology:hasIngredientName "Chipotle powder"^^xsd:String;
+                                                            RecipeOntology:hasIngredientQuantity [
+                                                              							rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 1;
+                                                                                        RecipeOntology:hasUnit "teaspoon"^^xsd:string]], 
+															[	
+                                          					rdf:type RecipeOntology:Ingredient;
+                                                            RecipeOntology:usedInRecipe	RecipeOntology:DryRubBakedChickenWings;
+                                                            RecipeOntology:hasIngredientType RecipeOntology:Flavorings;
+                                                            RecipeOntology:hasIngredientName "Chilli powder"^^xsd:String;
+                                                            RecipeOntology:hasIngredientQuantity [
+                                                              							rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 1;
+                                                                                        RecipeOntology:hasUnit "teaspoon"^^xsd:string]], 
+															[	
+                                          					rdf:type RecipeOntology:Ingredient;
+                                                            RecipeOntology:usedInRecipe	RecipeOntology:DryRubBakedChickenWings;
+                                                            RecipeOntology:hasIngredientType RecipeOntology:Flavorings;
+                                                            RecipeOntology:hasIngredientName "Oregano"^^xsd:String;
+                                                            RecipeOntology:hasIngredientQuantity [
+                                                              							rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 1;
+                                                                                        RecipeOntology:hasUnit "teaspoon"^^xsd:string]], 
+															[	
+                                          					rdf:type RecipeOntology:Ingredient;
+                                                            RecipeOntology:usedInRecipe	RecipeOntology:DryRubBakedChickenWings;
+                                                            RecipeOntology:hasIngredientType RecipeOntology:Flavorings;
+                                                            RecipeOntology:hasIngredientName "Mustard"^^xsd:String;
+                                                            RecipeOntology:hasIngredientQuantity [
+                                                              							rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 1;
+                                                                                        RecipeOntology:hasUnit "teaspoon"^^xsd:string]], 
+															[	
+                                          					rdf:type RecipeOntology:Ingredient;
+                                                            RecipeOntology:usedInRecipe	RecipeOntology:DryRubBakedChickenWings;
+                                                            RecipeOntology:hasIngredientType RecipeOntology:Flavorings;
+                                                            RecipeOntology:hasIngredientName "seasoning salt"^^xsd:String;
+                                                            RecipeOntology:hasIngredientQuantity [
+                                                              							rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 0.5;
+                                                                                        RecipeOntology:hasUnit "teaspoon"^^xsd:string]], 
+															[	
+                                          					rdf:type RecipeOntology:Ingredient;
+                                                            RecipeOntology:usedInRecipe	RecipeOntology:DryRubBakedChickenWings;
+                                                            RecipeOntology:hasIngredientType RecipeOntology:Flavorings;
+                                                            RecipeOntology:hasIngredientName "salt"^^xsd:String;
+                                                            RecipeOntology:hasIngredientQuantity [
+                                                              							rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 0.5;
+                                                                                        RecipeOntology:hasUnit "teaspoon"^^xsd:string]], 
+															[	
+                                          					rdf:type RecipeOntology:Ingredient;
+                                                            RecipeOntology:usedInRecipe	RecipeOntology:DryRubBakedChickenWings;
+                                                            RecipeOntology:hasIngredientType RecipeOntology:Flavorings;
+                                                            RecipeOntology:hasIngredientName "ground black pepper"^^xsd:String;
+                                                            RecipeOntology:hasIngredientQuantity [
+                                                              							rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 0.5;
+                                                                                        RecipeOntology:hasUnit "teaspoon"^^xsd:string]], 
+															[	
+                                          					rdf:type RecipeOntology:Ingredient;
+                                                            RecipeOntology:usedInRecipe	RecipeOntology:DryRubBakedChickenWings;
+                                                            RecipeOntology:hasIngredientType RecipeOntology:Fats_and_Oils;
+                                                            RecipeOntology:hasIngredientName "Vegetable Oil"^^xsd:String;
+                                                            RecipeOntology:hasIngredientQuantity [
+                                                              							rdf:type RecipeOntology:Quantity;
+                                                                                        RecipeOntology:hasValue 2;
+                                                                                        RecipeOntology:hasUnit "tablespoon"^^xsd:string]], 
+															[	
+                                          					rdf:type RecipeOntology:Ingredient;
+                                                            RecipeOntology:usedInRecipe	RecipeOntology:DryRubBakedChickenWings;
+                                                            RecipeOntology:hasIngredientType RecipeOntology:Fats_and_Oils;
+                                                            RecipeOntology:hasIngredientName "Non-stick cooking spray"^^xsd:String;
+                                                            ],
+															ex:Ingredient;
+										RecipeOntology:hasMainIngredient	ex:ingredient.
 
-#ex:Instructions	rdf:type RecipeOntology:Instruction;
-#				schema:hasRecipeInstructions "Preheat oven to 450 degrees.  Line a large baking sheet with parchment paper.  Place a wire cooling rack onto the baking sheet. Set aside."^^xsd:string,
-#											 "Wash wings in cold water and pat thoroughly dry with paper towels."^^xsd:string,
-#                                             "Place the wings into a bowl and toss well with the vegetable oil until well coated."^^xsd:string,
-#											"Whisk together the brown sugar, chipotle powder, chili powder, oregano, dry mustard, seasoning salt, salt, and ground black pepper."^^xsd:string,
-#											"Pour the dry rub over the chicken wings and massage until very well coated. Marinate in the fridge for 30 minutes."^^xsd:string,
-#											"Generously coat the wire rack with the non-stick cooking spray. Then, place each wing onto the rack in a single layer. Do not over lap."^^xsd:string,
-#											"Bake for 50 minutes. Remove from oven and plate. Garnish and serve immediately."^^xsd:string.
 
-ex:Instructions	rdf:type RecipeOntology:Instruction;
-				schema:hasRecipeInstructions [
-                					rdf:type rdf:Seq;
-                					rdf:li	"Preheat oven to 450 degrees.  Line a large baking sheet with parchment paper.  Place a wire cooling rack onto the baking sheet. Set aside."^^xsd:string;
-									rdf:li	"Wash wings in cold water and pat thoroughly dry with paper towels."^^xsd:string;
-                                    rdf:li	"Place the wings into a bowl and toss well with the vegetable oil until well coated."^^xsd:string;
-									rdf:li	"Whisk together the brown sugar, chipotle powder, chili powder, oregano, dry mustard, seasoning salt, salt, and ground black pepper."^^xsd:string;
-									rdf:li	"Pour the dry rub over the chicken wings and massage until very well coated. Marinate in the fridge for 30 minutes."^^xsd:string;
-									rdf:li	"Generously coat the wire rack with the non-stick cooking spray. Then, place each wing onto the rack in a single layer. Do not over lap."^^xsd:string;
-									rdf:li	"Bake for 50 minutes. Remove from oven and plate. Garnish and serve immediately."^^xsd:string].
+ex:Ingredient	rdf:type RecipeOntology:Ingredient;
+                RecipeOntology:usedInRecipe	RecipeOntology:DryRubBakedChickenWings;
+                RecipeOntology:hasIngredientType RecipeOntology:Meat;
+                RecipeOntology:hasIngredientName "Chicken wings"^^xsd:String;
+                RecipeOntology:hasIngredientQuantity [
+                                        rdf:type RecipeOntology:Quantity;
+                                        RecipeOntology:hasValue 24;
+                                        RecipeOntology:hasUnit "piece"^^xsd:string].
+
+
                                                                              
 
 
@@ -964,12 +1045,27 @@ ex:FoodProduct rdf:type RecipeOntology:FoodProduct;
                                                                                         RecipeOntology:hasUnit "milligrams"^^xsd:string]]].
                                                  				
 
-										
-										
-                                                             
-                                                             
+                                                   
                                         
-										
+#ex:Instructions	rdf:type RecipeOntology:Instruction;
+#				schema:hasRecipeInstructions "Preheat oven to 450 degrees.  Line a large baking sheet with parchment paper.  Place a wire cooling rack onto the baking sheet. Set aside."^^xsd:string,
+#											 "Wash wings in cold water and pat thoroughly dry with paper towels."^^xsd:string,
+#                                             "Place the wings into a bowl and toss well with the vegetable oil until well coated."^^xsd:string,
+#											"Whisk together the brown sugar, chipotle powder, chili powder, oregano, dry mustard, seasoning salt, salt, and ground black pepper."^^xsd:string,
+#											"Pour the dry rub over the chicken wings and massage until very well coated. Marinate in the fridge for 30 minutes."^^xsd:string,
+#											"Generously coat the wire rack with the non-stick cooking spray. Then, place each wing onto the rack in a single layer. Do not over lap."^^xsd:string,
+#											"Bake for 50 minutes. Remove from oven and plate. Garnish and serve immediately."^^xsd:string.
+
+ex:Instructions	rdf:type RecipeOntology:Instruction;
+				schema:hasRecipeInstructions [
+                					rdf:type rdf:Seq;
+                					rdf:li	"Preheat oven to 450 degrees.  Line a large baking sheet with parchment paper.  Place a wire cooling rack onto the baking sheet. Set aside."^^xsd:string;
+									rdf:li	"Wash wings in cold water and pat thoroughly dry with paper towels."^^xsd:string;
+                                    rdf:li	"Place the wings into a bowl and toss well with the vegetable oil until well coated."^^xsd:string;
+									rdf:li	"Whisk together the brown sugar, chipotle powder, chili powder, oregano, dry mustard, seasoning salt, salt, and ground black pepper."^^xsd:string;
+									rdf:li	"Pour the dry rub over the chicken wings and massage until very well coated. Marinate in the fridge for 30 minutes."^^xsd:string;
+									rdf:li	"Generously coat the wire rack with the non-stick cooking spray. Then, place each wing onto the rack in a single layer. Do not over lap."^^xsd:string;
+									rdf:li	"Bake for 50 minutes. Remove from oven and plate. Garnish and serve immediately."^^xsd:string].										
 									   
                                                          
 
